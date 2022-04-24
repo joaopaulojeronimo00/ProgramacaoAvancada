@@ -1,0 +1,19 @@
+8. O que fazem os seguintes programas em C?
+
+
+int main(){
+  int vet[] = {4,9,13};
+  int i;
+  for(i=0;i<3;i++){
+  printf("%d ",*(vet+i)); //mostra o valor do vetor vet[] na posição i. É uma maneira de percorrer o vetor.
+  }
+}
+
+
+int main(){
+  int vet[] = {4,9,13};
+  int i;
+  for(i=0;i<3;i++){
+  printf("%X ",vet+i); //mostra o endereço de memória de cada posição do vetor vet[].
+  }
+}
