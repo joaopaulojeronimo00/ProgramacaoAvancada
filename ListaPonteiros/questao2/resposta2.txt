@@ -1,0 +1,25 @@
+2. Mostre o que será impresso por programa supondo que i ocupa o endereço 4094 na memória.
+
+
+int i=5, *p;
+p = &i;
+printf("%x %d %d %d %d", p,*p+2,**&p,3**p,**&p+4);
+
+Será mostrado:
+
+4094, 7, 5, 15, 9
+
+p 	-- armazena o endereço da variável i.
+
+*p+2 	-- é uma operação de desreferenciação de p, que permite manipular o valor armazendo na variável cujo endereço está armazenado em p. Sendo assim *p é o mesmo que i, então será feito 5+2 = 7. 
+
+**&p	-- é feita a operação de desreferenciação no endereço de p e no endereço armazenado em p, sendo assim será mostrado o valor de i.
+	&p mostra o endereço do ponteiro para int p.
+	*&p mostra o endereço que p armazena
+	**&p mostra o valor que está armazenado no endereço em que p armazena, que é o endereço da variável i.
+
+3**p	-- realiza uma operação de multiplicação com o valor de i. O valor de i está sendo usado devido a desreferenciação de p.
+	
+**&p+4	-- faz uma soma com o valor de i. Aqui ocorre o mesmo que em **&p, mas somando 4 ao valor retornado.
+	
+
