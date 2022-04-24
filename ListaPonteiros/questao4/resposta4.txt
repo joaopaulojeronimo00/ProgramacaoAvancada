@@ -1,0 +1,33 @@
+a: mostrará o valor 20
+
+b: mostrará o valor 29
+
+c: mostrará o primeiro caractere de "Ponteiros" que é "P"
+
+d: mostrará o quinto caractere de "Ponteiros" que é "e"
+
+e: mostrará o primeiro caractere de "Ponteiros" que é "P"
+
+f: mostrará o quinto caractere de "Ponteiros" que é "e"
+
+g: mostrará o quarto caractere de "Ponteiros" que é "t"
+
+h: mostrará o valor 31, que é o valor da posição vetor[0]
+
+i: mostrará o valor 45, que é o valor da posição vetor[1]
+
+j: mostrará o valor 27, que é o valor da posição vetor[2]
+
+l: mostrará o valor 31, que é o valor da posição vetor[0]
+
+m: mostrará o valor 45, que é o valor da posição vetor[1]
+
+n: mostrará o valor 27, que é o valor da posição vetor[2]
+
+em a e b: os endereços de valor e temp foram armazenados nos ponteiros p1 e p2;
+a operação de desreferenciação foi usada para alterar o valor armazenado em valor e temp. 
+
+em c até g: foi criado um vetor de char's onde ponteiros foram utilizados para armazenar o endereço de certas posições; a operação de desreferenciação foi utilizada para atrelar o valor a variável aux algumas vezes, noutras a propria operação de desreferenciação foi utilizada no printf.
+
+em h até m: foram utilizadas técnicas similares as anteriores para percorrer o vetor vetor e manipular seus valores, atrelando o vetor a um ponteiro para inteiro e fazendo uso da desreferenciação.
+
