@@ -1,0 +1,15 @@
+1. Seja o seguinte trecho de programa:
+
+int i=3,j=5;
+int *p, *q;
+p = &i;
+q = &j;
+
+Determine o valor das seguintes expressões:
+
+p == &i; 		//comparação entre o valor de p e &i, que resulta em true ou 1.
+*p - *q;		//valor encontrado no endereço que p armazena subtraído do valor 
+			encontrado no endereço que q armazena: 3 - 5 = 2
+**&p;			//retornará o valor da variável i, pois &p é o endereço de p; *&p é o endereço de i 			armazenado em p; **&p é o valor armazenado na variável i.
+3 - *p/(*q) + 7;	// retornará 10, pois *p/(*q) = 0.6, que não é inteiro, portanto fica: 3 + 7 = 10.s
+
