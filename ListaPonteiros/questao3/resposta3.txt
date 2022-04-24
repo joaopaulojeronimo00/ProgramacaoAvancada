@@ -1,0 +1,18 @@
+3. Se i e j são variáveis inteiras e p e q ponteiros para int, quais das seguintes expressões de
+atribuição são ilegais?
+
+p = i;			-- p é um ponteiro para inteiro, que armazena apenas o endereço de um inteiro, portanto não é possível atribuir um inteiro em p. Ilegal.
+
+q = &j;			-- Legal
+	
+p = &*&i;		-- Legal, atribui um endereço em p
+
+i = (*&)j;		-- Ilegal, operação não existente para um inteiro
+
+i = *&j;		-- Legal, atribuição do valor encontrado em j para i.
+
+i = *&*&j;		-- Legal, ocorre o mesmo que acima.
+	
+q = *p;			-- Ilegal, pois tenta atribuir um inteiro ao ponteiro q, que armazena apenas endereços de memória.
+
+i = (*p)++ + *q;	-- Legal, a operação de desreferenciação está sendo utilizada para manipular os ponteiros e armazenar o resultado em i.
