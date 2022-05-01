@@ -1,0 +1,3 @@
+O algoritmo de qsort conseguiu realizar a ordenação num tempo tão pequeno que a medição não pôde calcular. ]
+O algoritmo de ordenação feito por mim precisou de 37ms para ordenar 5000 elementos no vetor, enquanto que para
+qsort o tempo foi de 0ms.
